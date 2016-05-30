@@ -1,8 +1,8 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>top.marchand.xml</groupId>
   <artifactId>jar-with-dependencies-and-catalog</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>jar-with-dependencies-and-catalog</name>
 
@@ -34,5 +34,30 @@
       <timezone>+1</timezone>
     </developer>
   </developers>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+        <configuration>
+          <releaseProfiles>release</releaseProfiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>release</id>
+      <distributionManagement>
+        <repository>
+          <id>nexus-releases</id>
+          <url>http://srvic/nexus/content/repositories/releases</url>
+          <layout>default</layout>
+        </repository>
+      </distributionManagement>
+    </profile>
+  </profiles>
   
 </project>
