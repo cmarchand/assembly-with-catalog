@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>top.marchand.xml</groupId>
   <artifactId>jar-with-dependencies-and-catalog</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>jar-with-dependencies-and-catalog</name>
 
