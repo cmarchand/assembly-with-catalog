@@ -1,0 +1,38 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>top.marchand.xml</groupId>
+  <artifactId>jar-with-dependencies-and-catalog</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>jar-with-dependencies-and-catalog</name>
+
+  <description>Assembly Descriptor as the jar-with-dependencies, and a catalog.xml taken from target/generated-catalog</description>
+
+  <licenses>
+    <license>
+      <name>MPL 2.0</name>
+      <url>https://www.mozilla.org/en-US/MPL/2.0/</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/cmarchand/assembly-with-catalog</connection>
+    <developerConnection>scm:git:https://github.com/cmarchand/assembly-with-catalog</developerConnection>
+    <url>scm:git:https://github.com/cmarchand/assembly-with-catalog</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>cmarchand</id>
+      <name>Christophe Marchand</name>
+      <organization>Oxiane</organization>
+      <organizationUrl>http://www.oxiane.com</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+  
+</project>
